@@ -1,0 +1,53 @@
+---
+- name: que eu esteja no formulário de cadastro das Casas Bahia
+  uid: 9f0c3db2-a3f7-4705-abef-a39912df5538
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: eu preencher os campos "p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13"
+    inválidos
+  uid: a8f428a2-2350-4ac9-83f6-076206bae281
+  parameters:
+  - name: p1
+  - name: p2
+  - name: p3
+  - name: p4
+  - name: p5
+  - name: p6
+  - name: p7
+  - name: p8
+  - name: p9
+  - name: p10
+  - name: p11
+  - name: p12
+  - name: p13
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: clicar no botão Continuar
+  uid: a8f1ed71-9d61-4fc1-bde5-b59b591792dd
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: o sistema deve exibir uma "p1" de erro
+  uid: 40bcaa50-2bc3-4071-8851-c5f6a4519740
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: eu preencher os campos "p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13"
+  uid: a99e1335-5d80-4820-b02f-bf46e38e5519
+  parameters:
+  - name: p1
+  - name: p2
+  - name: p3
+  - name: p4
+  - name: p5
+  - name: p6
+  - name: p7
+  - name: p8
+  - name: p9
+  - name: p10
+  - name: p11
+  - name: p12
+  - name: p13
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: o sistema deve exibir uma mensagem de sucesso
+  uid: e22a76d9-da39-4670-a39d-daca4c80f216
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
