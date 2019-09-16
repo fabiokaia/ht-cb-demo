@@ -6,10 +6,10 @@ Feature: Criar conta - Casas Bahia
 
   @cadastro
   Scenario Outline: Cadastro com campos obrigatórios inválidos
-    Dado que eu esteja no formulário de cadastro das Casas Bahia
-    Quando eu preencher os campos "<nome>","<cpf>","<ddd1>","<tel>","<ddd2>","<cel>","<dia>","<mes>","<ano>","<email>","<email2>","<senha>","<senha2>" inválidos
-    E clicar no botão Continuar
-    Então o sistema deve exibir uma "<mensagem>" de erro
+    Given que eu esteja no formulário de cadastro das Casas Bahia
+    When eu preencher os campos "<nome>","<cpf>","<ddd1>","<tel>","<ddd2>","<cel>","<dia>","<mes>","<ano>","<email>","<email2>","<senha>","<senha2>" inválidos
+    And clicar no botão Continuar
+    Then o sistema deve exibir uma "<mensagem>" de erro
 
     Examples:
       | nome | cpf | ddd1 | tel | ddd2 | cel | dia | mes | ano | email | email2 | senha | senha2 | mensagem | hiptest-uid |
@@ -30,9 +30,9 @@ Feature: Criar conta - Casas Bahia
 
   @cadastro
   Scenario Outline: Cadastro com campos obrigatórios válidos
-    Dado que eu esteja no formulário de cadastro das Casas Bahia
-    Quando eu preencher os campos "<nome>","<cpf>","<ddd1>","<tel>","<ddd2>","<cel>","<dia>","<mes>","<ano>","<email>","<email2>","<senha>","<senha2>"
-    Então o sistema deve exibir uma mensagem de sucesso
+    Given que eu esteja no formulário de cadastro das Casas Bahia
+    When eu preencher os campos "<nome>","<cpf>","<ddd1>","<tel>","<ddd2>","<cel>","<dia>","<mes>","<ano>","<email>","<email2>","<senha>","<senha2>"
+    Then o sistema deve exibir uma mensagem de sucesso
 
     Examples:
       | nome | cpf | ddd1 | tel | ddd2 | cel | dia | mes | ano | email | email2 | senha | senha2 | hiptest-uid |
