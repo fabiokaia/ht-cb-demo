@@ -10,4 +10,4 @@ script:
  - bundle exec cucumber --format json --out results.json
 
 after_script:
- # - hiptest-publisher -c cucumber.conf --push=results.json --test-run-id=300690
+  - hiptest-publisher -c cucumber.conf --test-run-id=300690
