@@ -5,4 +5,4 @@ Feature: Cadastro Casas Bahia
                 Quero criar conta no site das Casas Bahia
                 Para poder fazer compras online
 
-  Scenario: Cadastro com campos obrigatórios
+  Scenario: Cadastro com campos obrigatórios (uid:e5fd6050-a2d2-4a13-8416-dfe8720a1867)
