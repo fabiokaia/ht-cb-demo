@@ -4,10 +4,10 @@ sudo: false
 
 before_install:
  - gem install hiptest-publisher
- - "hiptest-publisher -c cucumber.conf --only=features,step_definitions --test-run-id=300680"
+ - "hiptest-publisher -c cucumber.conf --only=features,step_definitions --test-run-id=300690"
 
 script:
  - bundle exec cucumber --format json --out results.json
 
 after_script:
-  - hiptest-publisher -c cucumber.conf --push=results.json --test-run-id=300680
+  - hiptest-publisher -c cucumber.conf --push=results.json --test-run-id=300690
