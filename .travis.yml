@@ -3,7 +3,8 @@ rvm: 2.3.7
 sudo: false
 
 before_install:
- - hiptest-publisher -c cucumber.conf --force --only=features,step_definitions --test-run-id=300706
+ - gem install hiptest-publisher
+ - "hiptest-publisher -c cucumber.conf --force --only=features,step_definitions --test-run-id=300706"
 
 script:
  - bundle exec cucumber --format json --out results.json
