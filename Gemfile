@@ -7,3 +7,4 @@
  gem 'site_prism' 
  gem 'chromedriver-helper'
  gem 'test-unit'
+ gem 'hiptest-publisher'

@@ -5,7 +5,7 @@ Feature: Criar conta - Casas Bahia
     Para poder fazer compras online
 
   @cadastro
-  Scenario Outline: Cadastro com campos obrigatórios inválidos (uid:f6a72ae1-2130-4f59-be0c-5cb75865d49c)
+  Scenario Outline: Cadastro com campos obrigatórios inválidos (uid:cd173c7f-2aa3-4741-92e6-ba7a1a035338)
     Given que eu esteja no formulário de cadastro das Casas Bahia
     When eu preencher os campos "<nome>","<cpf>","<ddd1>","<tel>","<ddd2>","<cel>","<dia>","<mes>","<ano>","<email>","<email2>","<senha>","<senha2>" inválidos
     And clicar no botão Continuar
@@ -13,28 +13,28 @@ Feature: Criar conta - Casas Bahia
 
     Examples:
       | nome | cpf | ddd1 | tel | ddd2 | cel | dia | mes | ano | email | email2 | senha | senha2 | mensagem | hiptest-uid |
-      | "" | "63074597437" | "11" | "30223022" | "21" | "97775364" | "16" | "11" | "1981" | "teste2@teste.com.br" | "teste2@teste.com.br" | "1235" | "1235" | "O campo nome é obrigatório." | uid:676b4d50-f573-4674-8e1b-ee28831e9555 |
-      | "Fabio Araujo" | "10471506203" | "11" | "30223021" | "21" | "97775363" | "15" | "12" | "1980" | "teste1@teste.com.br" | "teste1@teste.com.br" | "1234" | "1234" | "CPF inválido." | uid:1b17b161-ba41-42d4-93f5-c4fdf8090670 |
-      | "José da Silva" | "" | "11" | "30223021" | "21" | "97775363" | "15" | "12" | "1980" | "teste1@teste.com.br" | "teste1@teste.com.br" | "1234" | "1234" | "CPF é um campo obrigatório." | uid:0a3d4cd7-a60b-4bf2-a8a0-01810b323abe |
-      | "Ana Lucia" | "63074597437" | "" | "30223022" | "21" | "97775364" | "16" | "11" | "1981" | "teste2@teste.com.br" | "teste2@teste.com.br" | "1235" | "1235" | "DDD do telefone é um campo obrigatório." | uid:c3a3ba1f-2cc9-49f8-9821-316c8fdf7405 |
-      | "Flavio Figueiredo" | "63074597437" | "11" | "" | "21" | "97775365" | "17" | "12" | "1982" | "teste2@teste.com.br" | "teste2@teste.com.br" | "1236" | "1236" | "O campo telefone é obrigatório" | uid:448a29d7-0353-4535-83d8-3b5dd7179700 |
-      | "Felipe Jacarini" | "63074597437" | "11" | "30223024" | "" | "97775367" | "18" | "10" | "1983" | "teste3@teste.com.br" | "teste3@teste.com.br" | "1237" | "1237" | "DDD do celular é um campo obrigatório." | uid:af43da9d-2006-4014-a34c-c450b61a60d2 |
-      | "Isis de Monaco" | "63074597437" | "11" | "30223025" | "21" | "" | "10" | "11" | "1984" | "teste4@teste.com.br" | "teste4@teste.com.br" | "1238" | "1238" | "O campo celular é obrigatório" | uid:f802748e-9246-41ea-89a8-51aecff62144 |
-      | "Maria do Carmo" | "63074597437" | "11" | "30223026" | "21" | "97775368" | "" | "12" | "1975" | "teste5@teste.com.br" | "teste5@teste.com.br" | "1239" | "1239" | "O campo Dia é obrigatório" | uid:cb53f84f-b837-4df8-b0c3-9429cc55b77b |
-      | "Moacir de Monaco" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "" | "1976" | "teste6@teste.com.br" | "teste6@teste.com.br" | "1240" | "1240" | "O campo Mês é obrigatório" | uid:4674b35a-b937-4d64-9b80-9d5abf665f2f |
-      | "Lourenço Primon" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "" | "teste6@teste.com.br" | "teste6@teste.com.br" | "1240" | "1240" | "O campo Ano é obrigatório" | uid:88b6b784-f578-4b64-b230-4ecf1b878575 |
-      | "Arthur Jacarini" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "1981" | "" | "teste6@teste.com.br" | "1240" | "1240" | "O campo E-mail é obrigatório" | uid:08a3ca89-a1f2-45cb-b2c3-3f07bb5f32b0 |
-      | "Bernardo Silva" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "1982" | "teste6@teste.com.br" | "" | "1240" | "1240" | "O campo Confirmar E-mail é obrigatório" | uid:bf80517b-0aa8-4e8e-a7d8-0c1979a89df6 |
-      | "Clara Silva" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "1983" | "teste6@teste.com.br" | "teste6@teste.com.br" | "" | "1240" | "O campo Senha é obrigatório" | uid:729c0d8a-6c52-43a3-9d09-dc4b6a75481f |
-      | "João Pedro" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "1972" | "teste6@teste.com.br" | "teste6@teste.com.br" | "1240" | "" | "O campo Confirmar Senha é obrigatório" | uid:fb8c0ddc-4b0d-46ae-856a-f76d055ebf6e |
+      | "" | "63074597437" | "11" | "30223022" | "21" | "97775364" | "16" | "11" | "1981" | "teste2@teste.com.br" | "teste2@teste.com.br" | "1235" | "1235" | "O campo nome é obrigatório." | uid:8ef8f82d-3937-4bc9-8b40-66a5554eb4fc |
+      | "Fabio Araujo" | "10471506203" | "11" | "30223021" | "21" | "97775363" | "15" | "12" | "1980" | "teste1@teste.com.br" | "teste1@teste.com.br" | "1234" | "1234" | "CPF inválido." | uid:e59fc24e-0fd7-44e9-adfc-87ad225995a2 |
+      | "José da Silva" | "" | "11" | "30223021" | "21" | "97775363" | "15" | "12" | "1980" | "teste1@teste.com.br" | "teste1@teste.com.br" | "1234" | "1234" | "CPF é um campo obrigatório." | uid:996fcbdb-e1ab-4671-bfdd-ff80cb059d89 |
+      | "Ana Lucia" | "63074597437" | "" | "30223022" | "21" | "97775364" | "16" | "11" | "1981" | "teste2@teste.com.br" | "teste2@teste.com.br" | "1235" | "1235" | "DDD do telefone é um campo obrigatório." | uid:7f6d38c2-1e9e-4e23-97ee-7bbb3b035877 |
+      | "Flavio Figueiredo" | "63074597437" | "11" | "" | "21" | "97775365" | "17" | "12" | "1982" | "teste2@teste.com.br" | "teste2@teste.com.br" | "1236" | "1236" | "O campo telefone é obrigatório" | uid:204900ee-9d90-4e13-b696-166284654357 |
+      | "Felipe Jacarini" | "63074597437" | "11" | "30223024" | "" | "97775367" | "18" | "10" | "1983" | "teste3@teste.com.br" | "teste3@teste.com.br" | "1237" | "1237" | "DDD do celular é um campo obrigatório." | uid:59d8cf41-c622-4f3f-bbb3-2f2a22a737fb |
+      | "Isis de Monaco" | "63074597437" | "11" | "30223025" | "21" | "" | "10" | "11" | "1984" | "teste4@teste.com.br" | "teste4@teste.com.br" | "1238" | "1238" | "O campo celular é obrigatório" | uid:7e7d7b18-db9a-42ed-b9ff-8bc3cb31727f |
+      | "Maria do Carmo" | "63074597437" | "11" | "30223026" | "21" | "97775368" | "" | "12" | "1975" | "teste5@teste.com.br" | "teste5@teste.com.br" | "1239" | "1239" | "O campo Dia é obrigatório" | uid:ef445468-ac78-4c9a-9606-35249ca6739d |
+      | "Moacir de Monaco" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "" | "1976" | "teste6@teste.com.br" | "teste6@teste.com.br" | "1240" | "1240" | "O campo Mês é obrigatório" | uid:933a1ed4-e250-4200-9ec0-0503e9df6f5a |
+      | "Lourenço Primon" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "" | "teste6@teste.com.br" | "teste6@teste.com.br" | "1240" | "1240" | "O campo Ano é obrigatório" | uid:a5e2da31-ec8e-4b0d-9a20-f8aa7ae0d54e |
+      | "Arthur Jacarini" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "1981" | "" | "teste6@teste.com.br" | "1240" | "1240" | "O campo E-mail é obrigatório" | uid:96892ee5-fefb-4755-a0a4-6eef7250e984 |
+      | "Bernardo Silva" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "1982" | "teste6@teste.com.br" | "" | "1240" | "1240" | "O campo Confirmar E-mail é obrigatório" | uid:468811eb-2547-4d9f-b331-0efc64f244f8 |
+      | "Clara Silva" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "1983" | "teste6@teste.com.br" | "teste6@teste.com.br" | "" | "1240" | "O campo Senha é obrigatório" | uid:ca75a172-0390-4d3c-ab31-1046620b5ed1 |
+      | "João Pedro" | "63074597437" | "11" | "30223027" | "21" | "97775369" | "21" | "10" | "1972" | "teste6@teste.com.br" | "teste6@teste.com.br" | "1240" | "" | "O campo Confirmar Senha é obrigatório" | uid:de4696ee-6650-41f3-a7f3-cea2622bc2f1 |
 
   @cadastro
-  Scenario Outline: Cadastro com campos obrigatórios válidos (uid:0c988d65-4301-4efa-8eb2-12a6b71d85c6)
+  Scenario Outline: Cadastro com campos obrigatórios válidos (uid:2739969f-9310-43df-b2d0-da114677fbbb)
     Given que eu esteja no formulário de cadastro das Casas Bahia
     When eu preencher os campos "<nome>","<cpf>","<ddd1>","<tel>","<ddd2>","<cel>","<dia>","<mes>","<ano>","<email>","<email2>","<senha>","<senha2>"
     Then o sistema deve exibir uma mensagem de sucesso
 
     Examples:
       | nome | cpf | ddd1 | tel | ddd2 | cel | dia | mes | ano | email | email2 | senha | senha2 | hiptest-uid |
-      | "Fabio Araujo" | "63074597437" | "11" | "30223021" | "21" | "97775363" | "15" | "12" | "1980" | "teste1@teste.com.br" | "teste1@teste.com.br" | "Teste@1234" | "Teste@1234" | uid:eee01e4e-7939-4c1a-b656-d45c118dae9c |
-      | "Ana Lucia" | "63074597437" | "11" | "30223022" | "21" | "97775364" | "16" | "11" | "1981" | "teste1@teste.com.br" | "teste1@teste.com.br" | "Teste@1235" | "Teste@1235" | uid:00d51796-49fd-42fa-9cc7-05a55e8693db |
+      | "Fabio Araujo" | "63074597437" | "11" | "30223021" | "21" | "97775363" | "15" | "12" | "1980" | "teste1@teste.com.br" | "teste1@teste.com.br" | "Teste@1234" | "Teste@1234" | uid:48235341-97de-44ee-a6cb-bd1ea3be76e0 |
+      | "Ana Lucia" | "63074597437" | "11" | "30223022" | "21" | "97775364" | "16" | "11" | "1981" | "teste1@teste.com.br" | "teste1@teste.com.br" | "Teste@1235" | "Teste@1235" | uid:feb8f057-41b8-465a-a18a-9b871c187457 |
